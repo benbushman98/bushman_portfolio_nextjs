@@ -36,8 +36,8 @@ const About = () => {
               />
             </div>
             <p className="d-block d-md-none">
-              {`I'm`} a Freelance UI/UX Designer and Developer based in London,
-              England. I strives to build immersive and beautiful web
+              {`I'm`} a Freelance UI/UX Designer and Developer based in Idaho, USA.
+              I strives to build immersive and beautiful web
               applications through carefully crafted code and user-centric
               design.
             </p>
