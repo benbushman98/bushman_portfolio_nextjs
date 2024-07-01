@@ -9,13 +9,13 @@ const Contact = () => {
     user_email: "",
     message: "",
   });
-  const { user_name, emuser_nameail, message } = mailData;
+  const { user_name, user_email, message } = mailData;
   const [error, setError] = useState(null);
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.user_name]: e.target.value });
   const onSubmit = (e) => {
     e.preventDefault();
-    if (user_name.length === 0 || user_name.length === 0 || message.length === 0) {
+    if (user_name.length === 0 || user_email.length === 0 || message.length === 0) {
       setError(true);
       clearError();
     } else {
@@ -30,7 +30,7 @@ const Contact = () => {
           (response) => {
             setError(false);
             clearError();
-            setMailData({ user_name: "", user_name: "", message: "" });
+            setMailData({ user_name: "", user_email: "", message: "" });
           },
           (err) => {
             console.log(err.text);
@@ -154,9 +154,9 @@ const Contact = () => {
                     <input
                       id="email"
                       type="email"
-                      name="user_name"
+                      name="user_email"
                       onChange={(e) => onChange(e)}
-                      value={user_name}
+                      value={user_email}
                       className="form-control"
                       placeholder="YOUR EMAIL"
                       required=""
