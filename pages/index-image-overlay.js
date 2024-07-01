@@ -13,7 +13,7 @@ const IndexImageOverlay = () => {
   const { changeColor } = useContext(ColorContext);
   useEffect(() => {
     changeColor("goldrenrod");
-  }, []);
+  }, [changeColor]);
 
   return (
     <Layouts light bodyCls={"light dark-header fullscreenbgimage"}>

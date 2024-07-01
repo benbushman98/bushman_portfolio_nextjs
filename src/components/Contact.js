@@ -82,14 +82,14 @@ const Contact = () => {
                   <h6 className="font-weight-600">
                     <span className="contact-title">LinkedIn</span>
                     <i className="fa fa-linkedin" />
-                    <span className="contact-content"><a href="https://www.linkedin.com/in/benjamin-bushman/" className="text-white" target="_blank" rel="noreferrer">/in/benjamin-bushman</a></span>
+                    <span className="contact-content"><a href="https://www.linkedin.com/in/benjamin-bushman/" className="text-white" target="_blank" rel="noopener noreferrer">/in/benjamin-bushman</a></span>
                   </h6>
                 </li>
                 <li>
                   <h6 className="font-weight-600">
                     <span className="contact-title">GitHub</span>
                     <i className="fa fa-github" />
-                    <span className="contact-content"><a href="https://github.com/benbushman98" className="text-white" target="_blank" rel="noreferrer">benbushman98</a></span>
+                    <span className="contact-content"><a href="https://github.com/benbushman98" className="text-white" target="_blank" rel="noopener noreferrer">benbushman98</a></span>
                   </h6>
                 </li>
               </ul>
