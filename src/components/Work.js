@@ -175,7 +175,7 @@ const Work = () => {
                     </span>{" "}
                   </li>
                 </ul>
-                <a href={work.link} target="_blank" alt={work.name} className="btn">
+                <a href={work.link} target="_blank" rel="noopener noreferrer" alt={work.name} className="btn">
                   <span>
                     <i className="fa fa-external-link" />
                     preview
