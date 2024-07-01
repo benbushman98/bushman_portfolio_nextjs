@@ -12,7 +12,7 @@ const Contact = () => {
   const { user_name, user_email, message } = mailData;
   const [error, setError] = useState(null);
   const onChange = (e) =>
-    setMailData({ ...mailData, [e.target.user_name]: e.target.value });
+    setMailData({ ...mailData, [e.target.name]: e.target.value });
   const onSubmit = (e) => {
     e.preventDefault();
     if (user_name.length === 0 || user_email.length === 0 || message.length === 0) {
