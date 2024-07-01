@@ -8,6 +8,9 @@ name: Daily Build
 #   # Runs on pushes targeting the default branch
 #   push:
 #     branches: ["main"]
+on:
+  schedule:
+     - cron:  '0 0,6,12,18 * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
