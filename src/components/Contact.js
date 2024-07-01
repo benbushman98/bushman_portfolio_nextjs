@@ -5,17 +5,17 @@ const Contact = () => {
   const { nav } = useContext(NavContext);
 
   const [mailData, setMailData] = useState({
-    name: "",
-    email: "",
+    user_name: "",
+    user_email: "",
     message: "",
   });
-  const { name, email, message } = mailData;
+  const { user_name, emuser_nameail, message } = mailData;
   const [error, setError] = useState(null);
   const onChange = (e) =>
-    setMailData({ ...mailData, [e.target.name]: e.target.value });
+    setMailData({ ...mailData, [e.target.user_name]: e.target.value });
   const onSubmit = (e) => {
     e.preventDefault();
-    if (name.length === 0 || email.length === 0 || message.length === 0) {
+    if (user_name.length === 0 || user_name.length === 0 || message.length === 0) {
       setError(true);
       clearError();
     } else {
@@ -30,7 +30,7 @@ const Contact = () => {
           (response) => {
             setError(false);
             clearError();
-            setMailData({ name: "", email: "", message: "" });
+            setMailData({ user_name: "", user_name: "", message: "" });
           },
           (err) => {
             console.log(err.text);
@@ -137,9 +137,9 @@ const Contact = () => {
                     <i className="fa fa-user prefix" />
                     <input
                       id="name"
-                      name="name"
+                      name="user_name"
                       onChange={(e) => onChange(e)}
-                      value={name}
+                      value={user_name}
                       type="text"
                       className="form-control"
                       placeholder="YOUR NAME"
@@ -154,9 +154,9 @@ const Contact = () => {
                     <input
                       id="email"
                       type="email"
-                      name="email"
+                      name="user_name"
                       onChange={(e) => onChange(e)}
-                      value={email}
+                      value={user_name}
                       className="form-control"
                       placeholder="YOUR EMAIL"
                       required=""
